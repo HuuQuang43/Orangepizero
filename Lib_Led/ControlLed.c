@@ -17,26 +17,26 @@ void setupLedPins() {
 void turnOnRedLed() {
     turnOffAllLeds();
     digitalWrite(RED_LED_PIN, HIGH);
-    printf("Đèn đỏ bật.\n");
+    //printf("Đèn đỏ bật.\n");
 }
 
 void turnOnGreenLed() {
     turnOffAllLeds();
     digitalWrite(GREEN_LED_PIN, HIGH);
-    printf("Đèn xanh bật.\n");
+    //printf("Đèn xanh bật.\n");
 }
 
 void turnOnYellowLed() {
     turnOffAllLeds();
     digitalWrite(YELLOW_LED_PIN, HIGH);
-    printf("Đèn vàng bật.\n");
+    //printf("Đèn vàng bật.\n");
 }
 
 void turnOffAllLeds() {
     digitalWrite(RED_LED_PIN, LOW);
     digitalWrite(GREEN_LED_PIN, LOW);
     digitalWrite(YELLOW_LED_PIN, LOW);
-    printf("Tất cả các đèn tắt.\n");
+    //printf("Tất cả các đèn tắt.\n");
 }
 
 void normalTrafficLightCycle() {
@@ -60,7 +60,7 @@ void handleButtonPressDuringGreen(int &greenTime) {
         turnOnYellowLed();
         delay(2000);  // Vàng 2 giây
         turnOnRedLed();
-        printf("Đèn đỏ tạm thời bật.\n");
+        //printf("Đèn đỏ tạm thời bật.\n");
         delay(5000);  // Đỏ 5 giây
         greenTime += 7000;  // Xanh đã dừng 7 giây
     }
