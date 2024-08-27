@@ -1,5 +1,5 @@
-#include "Lib_Led/ControlLed.hpp"
-#include "Lib_Button/ControlButton.hpp"
+#include "Lib_Led/ControlLed.h"
+#include "Lib_Button/ControlButton.h"
 
 int main() {
     setupLedPins();

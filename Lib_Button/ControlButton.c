@@ -1,4 +1,4 @@
-#include "ControlButton.hpp"
+#include "ControlButton.h"
 #include <wiringPi.h>
 
 #define BUTTON_PIN 3

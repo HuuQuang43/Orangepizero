@@ -1,5 +1,5 @@
-#ifndef CONTROL_LED_HPP
-#define CONTROL_LED_HPP
+#ifndef CONTROL_LED_H
+#define CONTROL_LED_H
 
 void setupLedPins();
 void turnOnRedLed();
