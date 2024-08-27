@@ -25,7 +25,7 @@ $(TARGET): $(OBJS)
 
 # Quy tắc để biên dịch main.cpp thành file object main.o
 main.o: main.c
-	$(CXX) $(CXXFLAGS) $(INCLUDES) -c main.cpp -o main.o
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -c main.c -o main.o
 
 # Quy tắc để biên dịch ControlLed.cpp thành file object ControlLed.o
 Lib_Led/ControlLed.o: Lib_Led/ControlLed.c Lib_Led/ControlLed.h
