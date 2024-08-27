@@ -1,5 +1,5 @@
 #include "ControlLed.h"
-#include "Lib_Button/ControlButton.h"
+#include "ControlButton.h"
 #include <wiringPi.h>
 
 #define RED_LED_PIN 0
