@@ -24,16 +24,16 @@ $(TARGET): $(OBJS)
 	$(CXX) $(CXXFLAGS) $(OBJS) -o $(TARGET) $(LIBS)
 
 # Quy tắc để biên dịch main.cpp thành file object main.o
-main.o: main.cpp
+main.o: main.c
 	$(CXX) $(CXXFLAGS) $(INCLUDES) -c main.cpp -o main.o
 
 # Quy tắc để biên dịch ControlLed.cpp thành file object ControlLed.o
 Lib_Led/ControlLed.o: Lib_Led/ControlLed.c Lib_Led/ControlLed.h
-	$(CXX) $(CXXFLAGS) $(INCLUDES) -c Lib_Led/ControlLed.cpp -o Lib_Led/ControlLed.o
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -c Lib_Led/ControlLed.c -o Lib_Led/ControlLed.o
 
 # Quy tắc để biên dịch ControlButton.cpp thành file object ControlButton.o
 Lib_Button/ControlButton.o: Lib_Button/ControlButton.c Lib_Button/ControlButton.h
-	$(CXX) $(CXXFLAGS) $(INCLUDES) -c Lib_Button/ControlButton.cpp -o Lib_Button/ControlButton.o
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -c Lib_Button/ControlButton.c -o Lib_Button/ControlButton.o
 
 # Quy tắc để dọn dẹp các file tạm thời
 clean:
