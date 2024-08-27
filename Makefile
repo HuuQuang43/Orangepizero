@@ -8,7 +8,7 @@ CXXFLAGS = -Wall
 LIBS = -lwiringPi
 
 # Bao gồm các thư mục header files
-INCLUDES = -I./Lib_Led -I./Lib_Button
+INCLUDES = -ILib_Led -ILib_Button
 
 # Danh sách các file object được tạo ra từ các file nguồn
 OBJS = main.o Lib_Led/ControlLed.o Lib_Button/ControlButton.o
