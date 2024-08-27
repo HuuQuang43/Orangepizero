@@ -2,7 +2,7 @@
 CXX = g++
 
 # Cờ compiler
-CXXFLAGS = -Wall -std=c++11
+CXXFLAGS = -Wall 
 
 # Các thư viện cần liên kết
 LIBS = -lwiringPi
@@ -25,15 +25,15 @@ $(TARGET): $(OBJS)
 
 # Quy tắc để biên dịch main.cpp thành file object main.o
 main.o: main.cpp
-	$(CXX) $(CXXFLAGS) $(INCLUDES) -c main.cpp
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -c main.cpp -o main.o
 
 # Quy tắc để biên dịch ControlLed.cpp thành file object ControlLed.o
 Lib_Led/ControlLed.o: Lib_Led/ControlLed.cpp Lib_Led/ControlLed.hpp
-	$(CXX) $(CXXFLAGS) $(INCLUDES) -c Lib_Led/ControlLed.cpp
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -c Lib_Led/ControlLed.cpp -o Lib_Led/ControlLed.o
 
 # Quy tắc để biên dịch ControlButton.cpp thành file object ControlButton.o
 Lib_Button/ControlButton.o: Lib_Button/ControlButton.cpp Lib_Button/ControlButton.hpp
-	$(CXX) $(CXXFLAGS) $(INCLUDES) -c Lib_Button/ControlButton.cpp
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -c Lib_Button/ControlButton.cpp -o Lib_Button/ControlButton.o
 
 # Quy tắc để dọn dẹp các file tạm thời
 clean:
